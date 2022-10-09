@@ -41,6 +41,7 @@ export default function Home() {
       postName: input?.postName,
       postDate: input?.postDate,
       examDate: input?.examDate,
+      lastDate: input?.lastDate,
       shortInfo: input?.shortInfo,
       admitCardAvlbl: input?.admitCardAvlbl,
       postNameShortDtl: input?.postNameShortDtl,
@@ -104,8 +105,10 @@ export default function Home() {
               <label>Post Date</label>
               <input onChange={handleChange} type="date" name="postDate" />
 
-              <label>Exam name</label>
+              <label>Exam date</label>
               <input onChange={handleChange} type="date" name="examDate" />
+              <label>Last Date</label>
+              <input onChange={handleChange} type="date" name="lastDate" />
             </div>
             <div className="flexRow">
               <label>Total Post</label>
